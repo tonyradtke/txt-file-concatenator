@@ -57,7 +57,6 @@ public class fileCombDriver {
 	}//method
 	
 	//makes sure the files we try to concat are .txt
-	//helper function to get file type (to check if txt)
 	public static Boolean checkFileExt(String fullName) {
 		String fileName = new File(fullName).getName();
 		int dotIndex = fileName.lastIndexOf('.');
@@ -69,8 +68,6 @@ public class fileCombDriver {
 	}//method
 	
 	//concats the txt files to the out file
-
-	//concats each text file to output file
 	@SuppressWarnings("resource")
 	public static void concat(String in) throws IOException{
 		BufferedReader rd = null;
@@ -83,8 +80,6 @@ public class fileCombDriver {
 	}//method
 	
 	//gets target dir and out file from user
-
-	//get main dir and output file from user
 	public static String getDirectory() throws IOException{
 		Scanner scan = new Scanner(System.in);
 		System.out.println();
